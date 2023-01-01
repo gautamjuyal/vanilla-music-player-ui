@@ -28,7 +28,14 @@
   overflow-y: scroll;
 }
 .side-nav::-webkit-scrollbar {
-  width: 10px;
+  width: 3px;
+}
+.side-nav::-webkit-scrollbar-track {
+  background-color: #1A1818;
+}
+.side-nav::-webkit-scrollbar-thumb {
+  background-color: #46454A;
+  border-radius: 10px;
 }
 
 .side-nav-top {
@@ -336,15 +343,14 @@
   gap: 1.3rem;
 }
 .track-section::-webkit-scrollbar {
-  width: 6px;
-  border: 1px solid black;
+  width: 5px;
 }
 .track-section::-webkit-scrollbar-track {
-  background: none;
+  background-color: #1A1818;
 }
 .track-section::-webkit-scrollbar-thumb {
-  height: 30px;
-  background-color: red;
+  background-color: #46454A;
+  border-radius: 10px;
 }
 
 .track-section-head {
