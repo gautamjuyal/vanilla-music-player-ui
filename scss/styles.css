@@ -136,9 +136,9 @@
 
 .main-screen {
   display: flex;
+  flex-direction: column;
   height: 89vh;
   width: 83%;
-  flex-direction: column;
 }
 
 .header {
@@ -153,8 +153,8 @@
 
 #header-back-btn {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background: none;
   color: #46454A;
   border: 1px solid #46454A;

@@ -29,8 +29,7 @@
 
 
 .side-nav{
-    display:flex;
-    flex-direction: column;
+    @include flex-col();
     width: 17%;
     justify-content: space-between;
     background-image:linear-gradient(130deg,#101012,#101012, #101012,#070031) ;
@@ -45,8 +44,7 @@
 }
 
 .side-nav-top{
-    display:flex;
-    flex-direction: column;
+    @include flex-col();
     align-items: center;
     width: 100%;
     color: white;
@@ -75,8 +73,7 @@
 }
 
 .side-nav-main{
-    display:flex;
-    flex-direction: column;
+    @include flex-col;
     gap: 5px;
 }
 
@@ -108,8 +105,7 @@
 }
 
 .side-nav-playlists{
-    display:flex;
-    flex-direction: column;
+    @include flex-col();
     gap: 16px;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
@@ -129,8 +125,7 @@
 }
 
 .side-nav-actions{
-    display:flex;
-    flex-direction: column;
+    @include flex-col();
     gap: 12px;
 
 }
@@ -158,10 +153,10 @@
 }
 
 .main-screen{
-    display:flex;
+    @include flex-col();
     height: 89vh;
     width: 83%;
-    flex-direction: column;
+    
 }
 
 .header{
@@ -176,9 +171,7 @@
 }
 
 #header-back-btn{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center();
     background: none;
     color: #46454A;
     border: 1px solid #46454A;
@@ -269,8 +262,7 @@
 }
 
 .album-art{
-    display:flex;
-    flex-direction: column;
+    @include flex-col();
     justify-content: space-between;
     padding: 2% 3%;
     color:#E5E5E5;
@@ -281,8 +273,7 @@
 }
 
 .artist-info{
-    display: flex;
-    flex-direction: column;
+    @include flex-col();
     gap: 7px;
 }
 
@@ -312,9 +303,7 @@
 }
 
 .album-art-action-btn{
-    display:flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center();
     border-radius: 50%;
     border: 0px;
     width: 30px;
@@ -351,8 +340,7 @@
 }
 
 .track-section{
-    display:flex;
-    flex-direction: column;
+    @include flex-col();
     color: white;
     font-size: 14px;
     font-weight: 600;
@@ -401,8 +389,7 @@
 }
 
 .track-list{
-    display:flex;
-    flex-direction: column;
+    @include flex-col();
     gap: 0.5rem;
     width: 100%;
     padding: 0;
@@ -425,9 +412,7 @@
 .track-play-pause{
     background: none;
     border: 1px solid #46454A;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center();
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -460,8 +445,7 @@
 }
 
 .track-details{
-    display:flex;
-    flex-direction: column;
+    @include flex-col();
     align-items:flex-start;
     justify-content: center;
     gap: 5px;
@@ -534,8 +518,7 @@
 }
 
 .bottom-player__track-artist{
-    display:flex;
-    flex-direction: column;
+    @include flex-col();
     font-size: 13px;
     font-weight: 600;
     gap: 5px;
@@ -553,9 +536,7 @@
 }
 
 .bottom-player-controls-btn{
-    display:flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center();
     background: none;
     height: 35px;
     width: 35px;
